@@ -41,8 +41,7 @@ A Python TCP/UDP port scanner, built on Scapy (https://scapy.net/), that allows 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/ianchristani/Netscan-python-version
 
 # (Optional) create a virtual environment
 python3 -m venv venv
@@ -59,6 +58,8 @@ Since Scapy needs to create raw sockets, run the script with elevated privileges
 
 ```bash
 sudo python3 main.py
+or
+./main.py
 ```
 
 You will see the menu Initial:
