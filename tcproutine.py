@@ -87,16 +87,7 @@ def tcpPKGdesigner(iptarget,tout,tgap,pkgamount):
     resultados = tcpSender(tout,tgap,pkgamount,fragPckg,package)
 
     # rotulacao dos resultados
-    if flag == "S":
-        fase = "syn_scan"
-    elif flag == "":
-        fase = "null_scan"
-    elif flag == "F":
-        fase = "fin_scan"
-    elif set(flag) == {"F", "P", "U"}:
-        fase = "xmas_scan"
-    else:
-        fase = "custom_scan"
+    fase = f"{flag}"
 
     status_portas = classificarResultados(resultados, flag=flag, protocolo="tcp", fase=fase)
 

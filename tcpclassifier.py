@@ -51,7 +51,7 @@ def classificarResultados(resultados, flag, protocolo="tcp", fase="scan"):
         estado_por_porta[porta] = "filtered"
 
     return {
-        porta: {"estado": estado, "fase": fase}
+        porta: {"estado": estado, "flag(s)": fase}
         for porta, estado in estado_por_porta.items()
     }
 
@@ -64,7 +64,7 @@ def formatarLinhas(status_portas, iptarget, protocolo="tcp", ocultar_closed=Fals
             continue
         linhas.append(
             f"[{iptarget}] porta {porta}/{protocolo} -> {info['estado']}"
-            f" (via {info['fase']})"
+            f" (Flag(s) {info['flag(s)']})"
         )
     return linhas
 
