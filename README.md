@@ -1,4 +1,4 @@
-# Netscan-python
+# Netscan-python in PORTUGUESE
 
 A Python TCP/UDP port scanner, built on Scapy (https://scapy.net/), that allows you to manually assemble scan packets (custom TCP flags, fragmentation, wait times, and interval between sends) through an interactive menu in the terminal.
 
