@@ -1,6 +1,6 @@
+from udp_payloads import executar_scan_udp
 
-
-def udpPKGdesigner(iptarget,tout,tgap,pkgamount):
+def udpPKGdesigner(iptarget,tout,tgap):
     print("----- Informacoes do Scan UDP -----")
     print(""" 
                                         AVISO
@@ -17,6 +17,7 @@ def udpPKGdesigner(iptarget,tout,tgap,pkgamount):
 
             """)
 
-    # portsToBeScanned = None
-    # report = executar_scan_udp(ipTarget, portsToBeScanned, waitingTime, pkgTime)
+    portsToBeScanned = None
+    report = executar_scan_udp(iptarget, portsToBeScanned, tout, tgap)
+    print(report)
 
