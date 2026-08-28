@@ -59,7 +59,7 @@ Since Scapy needs to create raw sockets, run the script with elevated privileges
 ```bash
 sudo python3 main.py
 or
-./main.py
+sudo ./main.py
 ```
 
 You will see the menu Initial:
