@@ -98,19 +98,6 @@ When choosing UDP, you are only asked for:
 
 The scan is automatically executed against the most common UDP port set, first attempting a service-specific payload and, if there is no response, an empty packet.
 
-## Project Structure
-
-```
-
-├── main.py # Entry point and initial menu
-├── cmroutine.py # Collection of common scan parameters (IP, timeout, interval, etc.)
-├── tcproutine.py # Assembly and sending of TCP packets, port parsing
-├── tcpclassifier.py # Classification of TCP scan results (open/closed/filtered)
-├── udproutine.py # UDP scan flow
-├── udp_payloads.py # Service-specific payloads and UDP sending logic
-└── requirements.txt # Project dependencies
-
-
 ## Known limitations
 
 - *Connect* and *Discover* (ICMP) type scans are not supported.
